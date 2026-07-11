@@ -1,84 +1,84 @@
-import { ArrowRight, DoorOpen, Bath, Sparkles, Building2, Wrench, Ruler, MessageCircle } from 'lucide-react';
+import { ArrowRight, MessageCircle } from 'lucide-react';
 import { waLink } from '@/lib/contact';
 import { Link } from 'react-router-dom';
 
 const services = [
   {
-    icon: Bath,
+    image: '/images/servicos/box-banheiro.jpg',
     title: 'Box para banheiro',
-    desc: 'Instalamos box de vidro para banheiros residenciais com acabamento sob medida, buscando praticidade, segurança e melhor aproveitamento do espaço.',
+    desc: 'Instalamos box de vidro para banheiros residenciais com acabamento sob medida.',
     link: '/servicos/box-para-banheiro',
   },
   {
-    icon: DoorOpen,
+    image: '/images/servicos/vidro-temperado.jpg',
     title: 'Vidro temperado',
-    desc: 'Trabalhamos com vidro temperado para aplicações residenciais e comerciais, indicado para portas, divisórias, vitrines e painéis.',
-    link: waLink('Olá! Gostaria de um orçamento para vidro temperado.'),
+    desc: 'Trabalhamos com vidro temperado para portas, divisórias, vitrines e painéis.',
+    link: '/servicos/vidro-temperado',
   },
   {
-    icon: Sparkles,
+    image: '/images/servicos/espelhos.jpg',
     title: 'Espelhos',
-    desc: 'Produzimos e instalamos espelhos sob medida para banheiros, quartos, closets, salas, academias, recepções e comércios.',
+    desc: 'Produzimos e instalamos espelhos sob medida para banheiros, quartos, salas e comércios.',
     link: '/servicos/espelhos-decorativos',
   },
   {
-    icon: Building2,
+    image: '/images/servicos/sacadas.jpg',
     title: 'Sacadas',
-    desc: 'Executamos fechamento de sacadas e varandas em vidro para oferecer mais proteção contra vento e chuva, mantendo a entrada de luz natural.',
+    desc: 'Fechamento de sacadas em vidro para mais proteção contra vento e chuva.',
     link: '/servicos/envidracamento-sacadas',
   },
   {
-    icon: Ruler,
+    image: '/images/servicos/guarda-corpo.jpg',
     title: 'Guarda-corpo',
-    desc: 'Instalamos guarda-corpo de vidro para escadas, sacadas, mezaninos e áreas elevadas, unindo segurança e visual moderno.',
+    desc: 'Guarda-corpo de vidro para escadas e sacadas, unindo segurança e visual moderno.',
     link: '/servicos/guarda-corpo-corrimao',
   },
   {
-    icon: DoorOpen,
+    image: '/images/servicos/portas-vidro.jpg',
     title: 'Portas de vidro',
-    desc: 'Fornecemos portas de vidro para lojas, escritórios, áreas internas e ambientes residenciais, com foco em funcionalidade e transparência.',
+    desc: 'Portas de vidro para lojas e ambientes residenciais, com foco em funcionalidade.',
     link: '/servicos/portas-de-vidro',
   },
   {
-    icon: Wrench,
+    image: '/images/servicos/janelas.jpg',
     title: 'Janelas e troca de vidro',
-    desc: 'Realizamos troca de vidros quebrados, trincados ou sem vedação em janelas, portas, vitrines e outras estruturas.',
-    link: waLink('Olá! Gostaria de um orçamento para janelas ou troca de vidro.'),
+    desc: 'Troca de vidros quebrados ou sem vedação em janelas, portas e estruturas.',
+    link: '/servicos/janelas-troca-vidro',
   },
   {
-    icon: Building2,
+    image: '/images/servicos/esquadrias.jpg',
     title: 'Esquadrias',
-    desc: 'Oferecemos soluções em esquadrias de alumínio e vidro para portas, janelas, fechamentos e divisórias, atendendo projetos diversos.',
+    desc: 'Soluções em esquadrias de alumínio para portas, janelas e fechamentos.',
     link: '/servicos/esquadrias-aluminio',
   },
   {
-    icon: Sparkles,
+    image: '/images/servicos/coberturas.jpg',
     title: 'Coberturas',
-    desc: 'Instalamos coberturas de vidro para corredores, entradas, áreas gourmet e pergolados, proporcionando proteção sem bloquear a luz.',
-    link: waLink('Olá! Gostaria de um orçamento para cobertura de vidro.'),
+    desc: 'Coberturas de vidro para corredores, proporcionando proteção sem bloquear a luz.',
+    link: '/servicos/cobertura-de-vidro',
   },
   {
-    icon: Ruler,
+    image: '/images/servicos/divisorias.jpg',
     title: 'Divisórias',
-    desc: 'Desenvolvemos divisórias de vidro para escritórios, clínicas, salas comerciais e ambientes internos residenciais.',
+    desc: 'Divisórias de vidro para escritórios, clínicas e ambientes residenciais.',
     link: '/servicos/divisorias-de-vidro',
   },
   {
-    icon: Building2,
+    image: '/images/servicos/fachadas.jpg',
     title: 'Fachadas',
-    desc: 'Produzimos fachadas de vidro para lojas, clínicas, escritórios e imóveis comerciais que buscam mais visibilidade e sofisticação.',
+    desc: 'Fachadas de vidro para imóveis comerciais que buscam sofisticação.',
     link: '/servicos/fachadas-de-vidro',
   },
   {
-    icon: DoorOpen,
+    image: '/images/servicos/vitrines.jpg',
     title: 'Vitrines',
-    desc: 'Instalamos vitrines de vidro para lojas e espaços comerciais, ajudando a expor produtos com mais segurança, organização e apelo visual.',
-    link: waLink('Olá! Gostaria de um orçamento para vitrine comercial.'),
+    desc: 'Vitrines de vidro para lojas, ajudando a expor produtos com segurança.',
+    link: '/servicos/vitrines-comerciais',
   },
   {
-    icon: Wrench,
+    image: '/images/servicos/manutencao.jpg',
     title: 'Manutenção',
-    desc: 'Executamos manutenção em sistemas de vidro, ferragens, roldanas, puxadores e vedações, ajudando a prolongar a vida útil das instalações.',
+    desc: 'Manutenção em sistemas de vidro, ferragens e vedações, prolongando a vida útil.',
     link: '/servicos/manutencao-reparos',
   },
 ];
@@ -95,36 +95,42 @@ const ServicesGrid = () => (
         </h2>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {services.map(({ icon: Icon, title, desc, link }) => (
-          <div
-            key={title}
-            className="group flex flex-col rounded-2xl border border-gray-200 bg-white p-8 shadow-sm transition-all hover:-translate-y-1 hover:border-[#E60012]/30 hover:shadow-lg"
-          >
-            <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#E60012]/5 text-[#E60012] transition-colors group-hover:bg-[#E60012] group-hover:text-white">
-              <Icon className="h-6 w-6" />
+      <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {services.map(({ image, title, desc, link }) => {
+          const content = (
+            <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-[#E60012] hover:bg-[#E60012] hover:shadow-xl">
+              <div className="relative h-48 w-full overflow-hidden">
+                <img
+                  src={image}
+                  alt={title}
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <h3 className="absolute bottom-4 left-6 text-xl font-bold text-white">
+                  {title}
+                </h3>
+              </div>
+              <div className="flex flex-1 flex-col p-6 transition-colors duration-300">
+                <p className="mb-6 flex-1 text-sm font-medium text-gray-600 transition-colors duration-300 group-hover:text-white/90">
+                  {desc}
+                </p>
+                <div className="mt-auto inline-flex items-center gap-2 text-sm font-bold text-[#E60012] transition-colors duration-300 group-hover:text-white">
+                  Ver Detalhes <ArrowRight className="h-4 w-4 transform transition-transform group-hover:translate-x-1" />
+                </div>
+              </div>
             </div>
-            <h3 className="mb-3 text-xl font-bold text-gray-900">{title}</h3>
-            <p className="mb-8 flex-1 text-sm font-medium text-gray-600">{desc}</p>
-            {link.startsWith('http') ? (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm font-bold text-[#E60012] transition-transform hover:gap-3"
-              >
-                Pedir orçamento <ArrowRight className="h-4 w-4" />
-              </a>
-            ) : (
-              <Link
-                to={link}
-                className="inline-flex items-center gap-2 text-sm font-bold text-[#E60012] transition-transform hover:gap-3"
-              >
-                Ver Detalhes <ArrowRight className="h-4 w-4" />
-              </Link>
-            )}
-          </div>
-        ))}
+          );
+
+          return link.startsWith('http') ? (
+            <a key={title} href={link} target="_blank" rel="noopener noreferrer" className="block h-full cursor-pointer">
+              {content}
+            </a>
+          ) : (
+            <Link key={title} to={link} className="block h-full cursor-pointer">
+              {content}
+            </Link>
+          );
+        })}
       </div>
 
       <div className="mt-16 flex justify-center">

@@ -6,7 +6,6 @@ import HeroSection from '@/components/home/HeroSection';
 import TrustBar from '@/components/home/TrustBar';
 import ServicesGrid from '@/components/home/ServicesGrid';
 import AboutSection from '@/components/home/AboutSection';
-import PortfolioGallery from '@/components/home/PortfolioGallery';
 import CTASection from '@/components/home/CTASection';
 
 const Index = () => (
@@ -17,7 +16,6 @@ const Index = () => (
       <TrustBar />
       <ServicesGrid />
       <AboutSection />
-      <PortfolioGallery />
       <CTASection />
     </main>
     <Footer />

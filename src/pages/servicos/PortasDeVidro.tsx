@@ -1,51 +1,118 @@
-
+import { Link } from 'react-router-dom';
 import React from 'react';
-import ServiceLayout from '../../components/services/ServiceLayout';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import { waLink } from '../../lib/contact';
+import { ArrowLeft, ArrowRight, Check, Calendar, MessageCircle, DoorOpen, SunDim, Briefcase } from 'lucide-react';
 
 const PortasDeVidro = () => {
-  const serviceData = {
-    title: 'Portas de Vidro em Umuarama',
-    subtitle: 'Elegância e Funcionalidade para seu Espaço',
-    description: 'Nossas portas de vidro integram ambientes com sofisticação, utilizando vidro temperado Blindex® e ferragens Udinese de alta qualidade.',
-    features: [
-      'Vidro temperado Blindex® 8mm',
-      'Ferragens Udinese premium',
-      'Diversos modelos disponíveis',
-      'Instalação profissional',
-      'Garantia de qualidade'
-    ],
-    models: [
-      {
-        name: 'Porta de Correr',
-        description: 'Ideal para otimizar espaços, desliza suavemente'
-      },
-      {
-        name: 'Porta de Abrir (Giro)',
-        description: 'Abertura tradicional, elegante e funcional'
-      },
-      {
-        name: 'Porta Pivotante',
-        description: 'Design moderno com abertura diferenciada'
-      },
-      {
-        name: 'Porta Sanfonada',
-        description: 'Máxima abertura em espaços amplos'
-      }
-    ],
-    faq: [
-      {
-        question: 'Portas de vidro são seguras?',
-        answer: 'Sim, utilizamos apenas vidro temperado Blindex®, que é 5 vezes mais resistente que o vidro comum e, se quebrar, se fragmenta em pequenos pedaços sem cortes.'
-      },
-      {
-        question: 'Qual a espessura ideal?',
-        answer: 'Recomendamos vidro de 8mm para portas residenciais e 10mm para portas de maior movimentação ou comerciais.'
-      }
-    ],
-    whatsappMessage: 'Olá, tenho interesse em Portas de Vidro e gostaria de um orçamento.'
-  };
+  return (
+    <div className="min-h-screen flex flex-col bg-[#f9f9f9] text-[#1a1c1c] font-['Open_Sans']">
+      <Header />
+      
+      <main className="flex-grow pt-[80px]">
+        <div className="max-w-[1280px] mx-auto px-6 pt-10">
+          <Link to="/#servicos" className="inline-flex items-center gap-2 text-[#E60012] font-semibold hover:underline">
+            <ArrowLeft className="h-4 w-4" /> Voltar para Serviços
+          </Link>
+        </div>
+        {/* Hero Section */}
+        <section className="relative w-full bg-[#111111]">
+          <div className="max-w-[1280px] mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+            <div className="w-full md:w-1/2 flex flex-col items-start z-10">
+              <span className="font-['Inter'] text-[12px] font-bold text-[#E60012] tracking-[0.1em] uppercase mb-3">Serviços Especializados</span>
+              <h1 className="font-['Inter'] text-[32px] md:text-[64px] font-extrabold leading-[1.1] tracking-tight text-white mb-6">
+                Portas de Vidro
+              </h1>
+              <p className="text-[18px] leading-[28px] text-white/80 mb-12 max-w-[500px]">
+                Fornecemos portas de vidro para lojas, escritórios, áreas internas e ambientes residenciais, com foco em funcionalidade, transparência e valorização do espaço.
+              </p>
+              <div className="flex gap-6">
+                <a 
+                  href={waLink('Olá! Gostaria de um orçamento para portas de vidro.')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#E60012] text-white font-['Inter'] font-semibold text-[16px] leading-[24px] px-8 py-4 rounded hover:bg-[#c4000f] transition-colors flex items-center gap-2 shadow-lg hover:-translate-y-0.5"
+                >
+                  Solicitar Orçamento <ArrowRight className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2 relative h-[400px] md:h-[600px]">
+              <div className="absolute inset-0 bg-[#e8e8e8] rounded-lg overflow-hidden border border-white/10 shadow-2xl">
+                <img 
+                  alt="Portas de Vidro" 
+                  className="w-full h-full object-cover object-center" 
+                  src="https://images.unsplash.com/photo-1534063806742-5e359049dd82?q=80&w=1200&auto=format&fit=crop" 
+                />
+              </div>
+            </div>
+          </div>
+        </section>
 
-  return <ServiceLayout {...serviceData} />;
+        {/* Features */}
+        <section className="bg-[#f4f3f3] py-20 border-y border-[#e2e2e2]">
+          <div className="max-w-[1280px] mx-auto px-6">
+            <div className="mb-12 max-w-[700px]">
+              <h2 className="font-['Inter'] text-[32px] md:text-[40px] font-bold text-[#1a1c1c] mb-3">Elegância e Funcionalidade</h2>
+              <p className="text-[16px] leading-[24px] text-[#5f3f3b]">
+                Conheça os principais benefícios ao escolher a Vidraçaria Liderança para o seu projeto de portas de vidro.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+              <div className="bg-white p-8 rounded border border-[#e2e2e2] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <DoorOpen className="text-[#E60012] h-8 w-8 mb-4" />
+                <h3 className="font-['Inter'] text-[24px] font-semibold text-[#1a1c1c] mb-2">Design Moderno</h3>
+                <p className="text-[16px] leading-[24px] text-[#5f3f3b]">
+                  Acabamento profissional para todos os ambientes.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded border border-[#e2e2e2] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <SunDim className="text-[#E60012] h-8 w-8 mb-4" />
+                <h3 className="font-['Inter'] text-[24px] font-semibold text-[#1a1c1c] mb-2">Luz Natural</h3>
+                <p className="text-[16px] leading-[24px] text-[#5f3f3b]">
+                  Melhor aproveitamento da iluminação do dia.
+                </p>
+              </div>
+              <div className="bg-white p-8 rounded border border-[#e2e2e2] shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <Briefcase className="text-[#E60012] h-8 w-8 mb-4" />
+                <h3 className="font-['Inter'] text-[24px] font-semibold text-[#1a1c1c] mb-2">Residencial e Comercial</h3>
+                <p className="text-[16px] leading-[24px] text-[#5f3f3b]">
+                  Soluções versáteis para qualquer necessidade.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 bg-[#f9f9f9]">
+          <div className="max-w-[1280px] mx-auto px-6 text-center">
+            <div className="bg-[#e8e8e8] border border-[#e2e2e2] rounded-lg p-12 md:p-16 shadow-inner">
+              <h2 className="font-['Inter'] text-[32px] md:text-[40px] font-bold text-[#1a1c1c] mb-4">Como solicitar um orçamento?</h2>
+              <p className="text-[18px] leading-[28px] text-[#5f3f3b] max-w-[700px] mx-auto mb-10">
+                Envie-nos as medidas aproximadas ou fotos do local através do WhatsApp. Assim, podemos retornar com uma estimativa de forma mais rápida. Se preferir, agendamos uma visita técnica.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href={waLink('Olá! Gostaria de um orçamento para portas de vidro.')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#25D366] text-white font-['Inter'] font-semibold text-[18px] px-8 py-4 rounded hover:bg-[#20bd5a] transition-colors inline-flex justify-center items-center gap-3 shadow-lg hover:-translate-y-0.5"
+                >
+                  <MessageCircle className="h-6 w-6" />
+                  Orçar pelo WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <Footer />
+    </div>
+  );
 };
 
 export default PortasDeVidro;

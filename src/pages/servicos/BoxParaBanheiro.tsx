@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { waLink } from '../../lib/contact';
-import { ArrowRight, Check, ShieldCheck, PenTool, Wrench, Calendar, BookOpen, Clock, Droplets } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, ShieldCheck, PenTool, Wrench, Calendar, BookOpen, Clock, Droplets } from 'lucide-react';
 
 const BoxParaBanheiro = () => {
   return (
@@ -11,6 +12,11 @@ const BoxParaBanheiro = () => {
       <Header />
       
       <main className="flex-grow pt-[80px]">
+        <div className="max-w-[1280px] mx-auto px-6 pt-10">
+          <Link to="/#servicos" className="inline-flex items-center gap-2 text-[#E60012] font-semibold hover:underline">
+            <ArrowLeft className="h-4 w-4" /> Voltar para Serviços
+          </Link>
+        </div>
         {/* Hero Section: Architectural Split Layout */}
         <section className="relative w-full bg-[#111111]">
           <div className="max-w-[1280px] mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">

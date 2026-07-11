@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { waLink } from '../../lib/contact';
-import { ArrowRight, Check, ChevronDown } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, ChevronDown } from 'lucide-react';
 
 const EspelhosDecorativos = () => {
   return (
@@ -11,6 +12,11 @@ const EspelhosDecorativos = () => {
       <Header />
       
       <main className="flex-grow pt-[80px]">
+        <div className="max-w-[1280px] mx-auto px-6 pt-10">
+          <Link to="/#servicos" className="inline-flex items-center gap-2 text-[#E60012] font-semibold hover:underline">
+            <ArrowLeft className="h-4 w-4" /> Voltar para Serviços
+          </Link>
+        </div>
         {/* Hero Section */}
         <section className="relative h-[600px] w-full flex items-center bg-[#eeeeed] overflow-hidden">
           <img 

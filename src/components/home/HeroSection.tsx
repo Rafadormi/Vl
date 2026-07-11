@@ -1,7 +1,25 @@
+import { useState, useEffect } from 'react';
+import { motion } from 'motion/react';
 import { MessageCircle, ArrowRight } from 'lucide-react';
 import { waLink, DEFAULT_WA_MSG } from '@/lib/contact';
 
+const images = [
+  "/images/home/hero/hero-1.jpg",
+  "/images/home/hero/hero-2.jpg",
+  "/images/home/hero/hero-3.jpg",
+  "/images/home/hero/hero-4.jpg"
+];
+
 const HeroSection = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative overflow-hidden bg-[#111111] text-white">
       {/* Dark background with subtle red glow */}
@@ -10,9 +28,22 @@ const HeroSection = () => {
         <div className="absolute -right-[10%] bottom-[0%] h-[40%] w-[40%] rounded-full bg-[#E60012] opacity-[0.05] blur-[100px]"></div>
       </div>
 
-      <div className="container relative z-10 grid gap-12 py-20 md:py-28 lg:grid-cols-[1.1fr_1fr] lg:items-center">
+      <div className="container relative z-10 grid gap-12 pt-32 pb-20 md:pt-40 md:pb-28 lg:grid-cols-[1.1fr_1fr] lg:items-center">
         {/* Left Content */}
-        <div className="animate-fade-up">
+        <motion.div 
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col items-start"
+        >
+          <motion.img 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            src="/images/logos/logo-branca.png" 
+            alt="Vidraçaria Liderança" 
+            className="h-16 mb-8 object-contain" 
+          />
           <h1 className="text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl tracking-tight text-white">
             Vidraçaria Liderança em <span className="text-[#E60012]">Umuarama</span>: soluções em vidro, espelhos, box, esquadrias e manutenção.
           </h1>
@@ -39,7 +70,12 @@ const HeroSection = () => {
             </a>
           </div>
 
-          <div className="mt-12 flex flex-wrap gap-4 sm:gap-6">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            className="mt-12 flex flex-wrap gap-4 sm:gap-6 w-full"
+          >
             {[
               { k: '15+', v: 'anos de casa' },
               { k: '1.000+', v: 'projetos entregues' },
@@ -50,37 +86,35 @@ const HeroSection = () => {
                 <dd className="mt-1 text-[10px] font-bold uppercase tracking-wider text-white/50">{s.v}</dd>
               </div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Right Image */}
-        <div className="relative hidden lg:block">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="relative hidden lg:block"
+        >
           <a 
             href={waLink(DEFAULT_WA_MSG)}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative mx-auto flex aspect-[4/3] w-full max-w-[600px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:border-[#E60012]/50 hover:shadow-[#E60012]/20"
+            className="group relative mx-auto flex aspect-[4/3] w-full max-w-[600px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:border-[#E60012]/50 hover:shadow-[#E60012]/30"
           >
-            <img 
-              src="https://i.postimg.cc/QCmG0PNV/vidracaria-lideranca-logo-horizontal-colorida.png" 
-              alt="Vidraçaria Liderança Logo" 
-              className="w-3/4 object-contain transition-transform duration-500 group-hover:scale-105" 
-            />
-            {/* Dark bottom gradient to make the badge pop */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
+            {images.map((img, idx) => (
+              <img 
+                key={img}
+                src={img} 
+                alt={`Projeto Vidraçaria Liderança ${idx + 1}`} 
+                className={`absolute inset-0 h-full w-full object-cover transition-all duration-1000 group-hover:scale-105 ${idx === currentImage ? 'opacity-100 z-10' : 'opacity-0 z-0 scale-100'}`} 
+              />
+            ))}
             
-            {/* Floating Badge */}
-            <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-end pointer-events-none transition-transform duration-300 group-hover:-translate-y-1">
-              <div className="rounded-xl border border-white/10 bg-[#1a1c23]/95 p-6 backdrop-blur-md shadow-2xl transition-colors duration-300 group-hover:border-[#E60012]/40">
-                <div className="text-[10px] font-bold uppercase tracking-widest text-white/50">Atendimento</div>
-                <div className="mt-1 text-xl font-bold text-white">Resposta rápida pelo WhatsApp</div>
-                <div className="mt-2 text-sm font-medium text-white/70">
-                  Envie as medidas e fotos — retornamos com orçamento no mesmo dia.
-                </div>
-              </div>
-            </div>
+            {/* Minimal overlay to make it feel clickable/card-like */}
+            <div className="absolute inset-0 z-20 bg-black/10 group-hover:bg-black/0 transition-colors pointer-events-none" />
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

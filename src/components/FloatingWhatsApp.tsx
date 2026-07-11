@@ -1,9 +1,13 @@
+import { motion } from 'motion/react';
 import { MessageCircle } from 'lucide-react';
 import { waLink, DEFAULT_WA_MSG } from '@/lib/contact';
 
 const FloatingWhatsApp = () => {
   return (
-    <a
+    <motion.a
+      initial={{ y: 50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
       href={waLink(DEFAULT_WA_MSG)}
       target="_blank"
       rel="noopener noreferrer"
@@ -12,7 +16,7 @@ const FloatingWhatsApp = () => {
     >
       <MessageCircle className="h-6 w-6" />
       <span className="hidden sm:inline font-semibold">WhatsApp</span>
-    </a>
+    </motion.a>
   );
 };
 

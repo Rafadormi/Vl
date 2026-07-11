@@ -16,6 +16,8 @@ import Orcamento from "./pages/Orcamento";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import NotFound from "./pages/NotFound";
 
+import Servicos from "./pages/Servicos";
+
 // Auth pages
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
@@ -30,6 +32,10 @@ import DivisoriasDeVidro from "./pages/servicos/DivisoriasDeVidro";
 import EspelhosDecorativos from "./pages/servicos/EspelhosDecorativos";
 import EsquadriaAluminio from "./pages/servicos/EsquadriaAluminio";
 import ManutencaoReparos from "./pages/servicos/ManutencaoReparos";
+import VidroTemperado from "./pages/servicos/VidroTemperado";
+import JanelasTrocaVidro from "./pages/servicos/JanelasTrocaVidro";
+import CoberturaDeVidro from "./pages/servicos/CoberturaDeVidro";
+import VitrinesComerciais from "./pages/servicos/VitrinesComerciais";
 
 const queryClient = new QueryClient();
 
@@ -43,6 +49,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/sobre" element={<Sobre />} />
+            <Route path="/servicos" element={<Servicos />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/parceiros" element={<Parceiros />} />
             <Route path="/contato" element={<Contato />} />
@@ -62,6 +69,10 @@ const App = () => (
             <Route path="/servicos/espelhos-decorativos" element={<EspelhosDecorativos />} />
             <Route path="/servicos/esquadrias-aluminio" element={<EsquadriaAluminio />} />
             <Route path="/servicos/manutencao-reparos" element={<ManutencaoReparos />} />
+            <Route path="/servicos/vidro-temperado" element={<VidroTemperado />} />
+            <Route path="/servicos/janelas-troca-vidro" element={<JanelasTrocaVidro />} />
+            <Route path="/servicos/cobertura-de-vidro" element={<CoberturaDeVidro />} />
+            <Route path="/servicos/vitrines-comerciais" element={<VitrinesComerciais />} />
             
             {/* Customer Protected Routes */}
             <Route path="/customer/profile" element={
