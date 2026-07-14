@@ -22,7 +22,7 @@ const EspelhosDecorativos = () => {
           <img 
             alt="Espelhos Decorativos" 
             className="absolute inset-0 w-full h-full object-cover opacity-80" 
-            src="https://images.unsplash.com/photo-1618220179428-22790b46a0eb?q=80&w=2000&auto=format&fit=crop" 
+            src="/images/servicos/espelhos.jpg" 
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#f9f9f9] via-[#f9f9f9]/80 to-transparent"></div>
           <div className="relative z-10 max-w-[1280px] mx-auto px-6 w-full md:w-2/3">
@@ -58,7 +58,7 @@ const EspelhosDecorativos = () => {
                 <img 
                   alt="Espelho Bisotê" 
                   className="w-full h-full object-cover" 
-                  src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" 
+                  src="/images/servicos/espelhos.jpg" 
                 />
               </div>
               <div className="p-6 flex-grow flex flex-col">
@@ -85,7 +85,7 @@ const EspelhosDecorativos = () => {
                 <img 
                   alt="Espelho com LED" 
                   className="w-full h-full object-cover" 
-                  src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop" 
+                  src="/images/servicos/box-banheiro.jpg" 
                 />
               </div>
               <div className="p-6 flex-grow flex flex-col">
@@ -112,7 +112,7 @@ const EspelhosDecorativos = () => {
                 <img 
                   alt="Parede de Espelho" 
                   className="w-full h-full object-cover" 
-                  src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=800&auto=format&fit=crop" 
+                  src="/images/servicos/espelhos.jpg" 
                 />
               </div>
               <div className="p-6 flex-grow flex flex-col">
@@ -155,7 +155,7 @@ const EspelhosDecorativos = () => {
                 <img 
                   alt="Sala de Estar com Espelho" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/coberturas.jpg" 
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
                   <p className="font-['Inter'] text-[12px] font-bold tracking-[0.1em] text-white uppercase mb-1 opacity-80">Projeto Residencial</p>
@@ -168,7 +168,7 @@ const EspelhosDecorativos = () => {
                 <img 
                   alt="Banheiro com Espelho Lapidado" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop" 
+                  src="/images/servicos/box-banheiro.jpg" 
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
                   <p className="font-['Inter'] text-[12px] font-bold tracking-[0.1em] text-white uppercase mb-1 opacity-80">Banheiro Suíte Master</p>
@@ -181,7 +181,7 @@ const EspelhosDecorativos = () => {
                 <img 
                   alt="Hall de Entrada" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop" 
+                  src="/images/servicos/espelhos.jpg" 
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
                   <p className="font-['Inter'] text-[12px] font-bold tracking-[0.1em] text-white uppercase mb-1 opacity-80">Hall de Entrada</p>
@@ -193,7 +193,7 @@ const EspelhosDecorativos = () => {
                 <img 
                   alt="Espelho Bronze" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
-                  src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop" 
+                  src="/images/servicos/sacadas.jpg" 
                 />
                 <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/80 to-transparent">
                   <p className="font-['Inter'] text-[12px] font-bold tracking-[0.1em] text-white uppercase mb-1 opacity-80">Espelho Bronze</p>

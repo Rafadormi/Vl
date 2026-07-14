@@ -10,6 +10,26 @@ const images = [
   "/images/home/hero/hero-4.jpg"
 ];
 
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.1
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut" }
+  }
+};
+
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
@@ -31,28 +51,26 @@ const HeroSection = () => {
       <div className="container relative z-10 grid gap-12 pt-32 pb-20 md:pt-40 md:pb-28 lg:grid-cols-[1.1fr_1fr] lg:items-center">
         {/* Left Content */}
         <motion.div 
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
           className="flex flex-col items-start"
         >
           <motion.img 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+            variants={itemVariants}
             src="/images/logos/logo-branca.png" 
             alt="Vidraçaria Liderança" 
             className="h-16 mb-8 object-contain" 
           />
-          <h1 className="text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl tracking-tight text-white">
+          <motion.h1 variants={itemVariants} className="text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl tracking-tight text-white">
             Vidraçaria Liderança em <span className="text-[#E60012]">Umuarama</span>: soluções em vidro, espelhos, box, esquadrias e manutenção.
-          </h1>
+          </motion.h1>
 
-          <p className="mt-6 max-w-xl text-lg text-white/80 font-medium">
+          <motion.p variants={itemVariants} className="mt-6 max-w-xl text-lg text-white/80 font-medium">
             Atendemos projetos residenciais e comerciais com serviços sob medida, acabamento profissional e soluções em vidro para valorizar seu ambiente.
-          </p>
+          </motion.p>
 
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <motion.div variants={itemVariants} className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href={waLink(DEFAULT_WA_MSG)}
               target="_blank"
@@ -68,12 +86,10 @@ const HeroSection = () => {
             >
               Ver serviços <ArrowRight className="h-5 w-5" />
             </a>
-          </div>
+          </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+            variants={itemVariants}
             className="mt-12 flex flex-wrap gap-4 sm:gap-6 w-full"
           >
             {[

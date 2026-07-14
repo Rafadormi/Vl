@@ -43,7 +43,7 @@ const FachadasDeVidro = () => {
                 <img 
                   alt="Fachadas de Vidro" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/fachadas.jpg" 
                 />
               </div>
             </div>

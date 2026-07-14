@@ -43,7 +43,7 @@ const VitrinesComerciais = () => {
                 <img 
                   alt="Vitrines Comerciais" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1555529733-0e67056058e1?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/vitrines.jpg" 
                 />
               </div>
             </div>

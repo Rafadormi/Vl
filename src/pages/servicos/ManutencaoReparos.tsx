@@ -43,7 +43,7 @@ const ManutencaoReparos = () => {
                 <img 
                   alt="Manutenção de Vidros e Ferragens" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/manutencao.jpg" 
                 />
               </div>
             </div>

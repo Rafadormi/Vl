@@ -18,55 +18,55 @@ const projects = [
     id: 1,
     title: 'Fachada Comercial',
     category: 'Fachadas e Vitrines',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/fachadas.jpg',
   },
   {
     id: 2,
     title: 'Guarda-corpo de Escada',
     category: 'Guarda-corpos e Sacadas',
-    image: 'https://images.unsplash.com/photo-1502672260266-1c1c6741d40b?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/guarda-corpo.jpg',
   },
   {
     id: 3,
     title: 'Box Elegance',
     category: 'Box e Espelhos',
-    image: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/box-banheiro.jpg',
   },
   {
     id: 4,
     title: 'Esquadrias Linha Gold',
     category: 'Esquadrias',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/esquadrias.jpg',
   },
   {
     id: 5,
     title: 'Parede de Espelho',
     category: 'Box e Espelhos',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/espelhos.jpg',
   },
   {
     id: 6,
     title: 'Vitrine de Loja',
     category: 'Fachadas e Vitrines',
-    image: 'https://images.unsplash.com/photo-1555529733-0e67056058e1?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/vitrines.jpg',
   },
   {
     id: 7,
     title: 'Envidraçamento de Sacada',
     category: 'Guarda-corpos e Sacadas',
-    image: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/sacadas.jpg',
   },
   {
     id: 8,
     title: 'Esquadrias em Alumínio Preto',
     category: 'Esquadrias',
-    image: 'https://images.unsplash.com/photo-1534063806742-5e359049dd82?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/portas-vidro.jpg',
   },
   {
     id: 9,
     title: 'Cobertura de Vidro',
     category: 'Esquadrias', // Or custom category
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=800&auto=format&fit=crop',
+    image: '/images/servicos/coberturas.jpg',
   }
 ];
 

@@ -43,7 +43,7 @@ const VidroTemperado = () => {
                 <img 
                   alt="Vidro Temperado" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1574360699264-5a3d758c5a2c?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/vidro-temperado.jpg" 
                 />
               </div>
             </div>

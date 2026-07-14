@@ -8,7 +8,7 @@ const Footer = () => (
       <div>
         <div className="flex items-center gap-3">
           <div className="rounded-md bg-white p-2">
-            <img src="https://i.postimg.cc/QCmG0PNV/vidracaria-lideranca-logo-horizontal-colorida.png" alt="Vidraçaria Liderança" className="h-10 w-auto object-contain" />
+            <img src="/images/logos/logo-colorida.png" alt="Vidraçaria Liderança" className="h-10 w-auto object-contain" />
           </div>
         </div>
         <p className="mt-4 max-w-sm text-sm text-white/70">

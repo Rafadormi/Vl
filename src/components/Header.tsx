@@ -39,7 +39,7 @@ const Header = () => {
           <img 
             src={isTransparent 
               ? "/images/logos/logo-branca.png" 
-              : "/images/logos/logo-simbolo.png"} 
+              : "/images/logos/logo-colorida.png"} 
             alt="Vidraçaria Liderança" 
             className="h-10 md:h-12 w-auto object-contain transition-all duration-300" 
           />

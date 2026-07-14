@@ -44,7 +44,7 @@ const BoxParaBanheiro = () => {
                 <img 
                   alt="Modern minimalist bathroom shower" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/box-banheiro.jpg" 
                 />
               </div>
             </div>
@@ -123,7 +123,7 @@ const BoxParaBanheiro = () => {
               <img 
                 alt="Box de banheiro frontal em vidro incolor" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop" 
+                src="/images/servicos/sacadas.jpg" 
               />
               <div className="absolute bottom-0 left-0 w-full p-6 bg-white/90 backdrop-blur-sm border-t border-[#e2e2e2] transform translate-y-[20%] group-hover:translate-y-0 transition-transform">
                 <p className="font-['Inter'] text-[14px] text-[#1a1c1c] font-bold">Box Frontal - Sistema de Correr</p>
@@ -136,7 +136,7 @@ const BoxParaBanheiro = () => {
               <img 
                 alt="Box de canto em vidro fumê" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=800&auto=format&fit=crop" 
+                src="/images/servicos/box-banheiro.jpg" 
               />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur-sm border-t border-[#e2e2e2] transform translate-y-[30%] group-hover:translate-y-0 transition-transform">
                 <p className="font-['Inter'] text-[14px] text-[#1a1c1c] font-bold">Box de Canto (L)</p>
@@ -149,7 +149,7 @@ const BoxParaBanheiro = () => {
               <img 
                 alt="Detalhe de roldana aparente em box de banheiro" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?q=80&w=800&auto=format&fit=crop" 
+                src="/images/servicos/manutencao.jpg" 
               />
               <div className="absolute bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur-sm border-t border-[#e2e2e2] transform translate-y-[30%] group-hover:translate-y-0 transition-transform">
                 <p className="font-['Inter'] text-[14px] text-[#1a1c1c] font-bold">Sistema Elegance</p>

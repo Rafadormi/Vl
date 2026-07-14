@@ -43,7 +43,7 @@ const DivisoriasDeVidro = () => {
                 <img 
                   alt="Divisórias de Vidro" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/divisorias.jpg" 
                 />
               </div>
             </div>

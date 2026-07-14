@@ -43,7 +43,7 @@ const EsquadriaAluminio = () => {
                 <img 
                   alt="Esquadrias de Alumínio e Vidro" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/esquadrias.jpg" 
                 />
               </div>
             </div>

@@ -36,6 +36,7 @@ import VidroTemperado from "./pages/servicos/VidroTemperado";
 import JanelasTrocaVidro from "./pages/servicos/JanelasTrocaVidro";
 import CoberturaDeVidro from "./pages/servicos/CoberturaDeVidro";
 import VitrinesComerciais from "./pages/servicos/VitrinesComerciais";
+import BackToTop from "@/components/BackToTop";
 
 const queryClient = new QueryClient();
 
@@ -101,6 +102,7 @@ const App = () => (
             {/* Catch-all route deve ficar por último */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          <BackToTop />
         </AuthProvider>
       </BrowserRouter>
     </TooltipProvider>

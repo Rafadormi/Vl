@@ -12,7 +12,7 @@ const services = [
     desc: 'Instalamos box de vidro para banheiros residenciais com acabamento sob medida, buscando praticidade, segurança e melhor aproveitamento do espaço.',
     features: ['Projeto sob medida', 'Visual moderno e fácil manutenção', 'Atendimento em Umuarama'],
     link: '/servicos/box-para-banheiro',
-    image: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=800&auto=format&fit=crop'
+    image: '/images/servicos/box-banheiro.jpg'
   },
   {
     icon: Grid,
@@ -20,7 +20,7 @@ const services = [
     desc: 'Trabalhamos com vidro temperado para aplicações residenciais e comerciais, indicado para portas, divisórias, vitrines e painéis.',
     features: ['Mais resistência', 'Acabamento elegante', 'Uso residencial e comercial'],
     link: '/servicos/vidro-temperado',
-    image: 'https://images.unsplash.com/photo-1574360699264-5a3d758c5a2c?q=80&w=800&auto=format&fit=crop'
+    image: '/images/servicos/vidro-temperado.jpg'
   },
   {
     icon: Sparkles,
@@ -44,7 +44,7 @@ const services = [
     desc: 'Instalamos guarda-corpo de vidro para escadas, sacadas, mezaninos e áreas elevadas, unindo segurança e visual moderno.',
     features: ['Segurança com sofisticação', 'Áreas internas e externas', 'Visual leve e atual'],
     link: '/servicos/guarda-corpo-corrimao',
-    image: 'https://images.unsplash.com/photo-1502672260266-1c1c6741d40b?q=80&w=800&auto=format&fit=crop'
+    image: '/images/servicos/guarda-corpo.jpg'
   },
   {
     icon: DoorOpen,
@@ -52,7 +52,7 @@ const services = [
     desc: 'Fornecemos portas de vidro para lojas, escritórios, áreas internas e ambientes residenciais, com foco em funcionalidade.',
     features: ['Uso comercial e residencial', 'Melhor aproveitamento de luz', 'Acabamento moderno'],
     link: '/servicos/portas-de-vidro',
-    image: 'https://images.unsplash.com/photo-1534063806742-5e359049dd82?q=80&w=800&auto=format&fit=crop'
+    image: '/images/servicos/portas-vidro.jpg'
   },
   {
     icon: Wrench,
@@ -84,7 +84,7 @@ const services = [
     desc: 'Desenvolvemos divisórias de vidro para escritórios, clínicas, salas comerciais e ambientes internos residenciais.',
     features: ['Separação elegante dos espaços', 'Mantém a amplitude', 'Ambientes corporativos e residenciais'],
     link: '/servicos/divisorias-de-vidro',
-    image: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=800&auto=format&fit=crop'
+    image: '/images/servicos/divisorias.jpg'
   },
   {
     icon: Building2,
@@ -100,7 +100,7 @@ const services = [
     desc: 'Instalamos vitrines de vidro para lojas e espaços comerciais, ajudando a expor produtos com mais segurança e apelo visual.',
     features: ['Melhor exposição de produtos', 'Instalação e reposição', 'Comércio em geral'],
     link: '/servicos/vitrines-comerciais',
-    image: 'https://images.unsplash.com/photo-1555529733-0e67056058e1?q=80&w=800&auto=format&fit=crop'
+    image: '/images/servicos/vitrines.jpg'
   },
   {
     icon: WrenchIcon,
@@ -108,7 +108,7 @@ const services = [
     desc: 'Executamos manutenção em sistemas de vidro, ferragens, roldanas, puxadores, vedações e demais componentes.',
     features: ['Prevenção e correção', 'Ajustes em peças e acessórios', 'Mais durabilidade para a instalação'],
     link: '/servicos/manutencao-reparos',
-    image: 'https://images.unsplash.com/photo-1584622781564-1d987f7333c1?q=80&w=800&auto=format&fit=crop'
+    image: '/images/servicos/manutencao.jpg'
   }
 ];
 

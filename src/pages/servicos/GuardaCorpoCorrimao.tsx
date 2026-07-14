@@ -43,7 +43,7 @@ const GuardaCorpoCorrimao = () => {
                 <img 
                   alt="Guarda-Corpo de Vidro" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1502672260266-1c1c6741d40b?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/guarda-corpo.jpg" 
                 />
               </div>
             </div>

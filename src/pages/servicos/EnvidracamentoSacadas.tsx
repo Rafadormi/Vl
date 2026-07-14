@@ -43,7 +43,7 @@ const EnvidracamentoSacadas = () => {
                 <img 
                   alt="Fechamento de Sacada" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/sacadas.jpg" 
                 />
               </div>
             </div>

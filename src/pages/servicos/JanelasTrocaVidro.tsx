@@ -43,7 +43,7 @@ const JanelasTrocaVidro = () => {
                 <img 
                   alt="Janelas e Troca de Vidro" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/janelas.jpg" 
                 />
               </div>
             </div>

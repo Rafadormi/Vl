@@ -43,7 +43,7 @@ const PortasDeVidro = () => {
                 <img 
                   alt="Portas de Vidro" 
                   className="w-full h-full object-cover object-center" 
-                  src="https://images.unsplash.com/photo-1534063806742-5e359049dd82?q=80&w=1200&auto=format&fit=crop" 
+                  src="/images/servicos/portas-vidro.jpg" 
                 />
               </div>
             </div>
